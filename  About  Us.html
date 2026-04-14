@@ -9,7 +9,7 @@
         display:flex;
         justify-content: center;
         background-color: rgb(169, 157, 135);
-        padding:3%
+        padding:3%;
     }
     .nav a{
         margin:0 10%;
@@ -23,6 +23,47 @@
         background-color: rgba(99, 99, 118, 0.329);
         border-radius: 5px;
     }
+    body{
+        background-color: rgba(149, 131, 100, 0.518);
+    }
+    h1{
+        text-align: center;
+        font-size: 40px;
+    }
+    img{
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    .page{
+        display: flex;
+        flex-direction: column;
+    }
+    .box-one{
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        border-radius: 10px;
+        background-color: rgb(165, 146, 111);
+        padding: 20px;
+        margin: 20px;
+    }
+    .box-one h2{
+        text-align: center;
+    }
+    .box-one ul li{
+        margin-bottom: 10px;
+        padding: 0% 10%;
+    }
+    .box-two{
+        display:flex;
+        flex-direction: column;
+        align-self: flex-end;
+        border-radius: 10px;
+        background-color: rgb(165, 146, 111);
+        padding: 20px;
+        margin: ;
+    }
     </style>
 </head>
 <body>
@@ -34,6 +75,8 @@
     </div>
     <h1>About Us</h1>
     <img src="seeetz-aWzrhwV4s38-unsplash.jpg" alt="">
+    <div class="page">
+        <div class="box-one">
     <h2>Our Vision
         <ul>
             <li>To create a community where household items are reused and recycled.</li>
@@ -41,6 +84,9 @@
             <li>To provide a safe and easy-to-use platform for exchanging and purchasing household items.</li>
         </ul>
     </h2>
+    </div>
+
+    <div class="box-two">
     <h3>Our Mission
         <ul>
             <li>Enable community members to save money by exchanging items instead of buying new ones.</li>
@@ -48,6 +94,10 @@
             <li>Help community members find unique treasures and give their unwanted items a new life.</li>
         </ul>
     </h3>
-    
-</body>
-</html>
+    </div>
+
+    </div>
+        
+            
+    </body>
+    </html>
