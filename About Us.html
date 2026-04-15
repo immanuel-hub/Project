@@ -37,33 +37,60 @@
     }
     .page{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+       margin-bottom: 20%;
+       margin-top: 10%;
+
     }
     .box-one{
         display: flex;
         flex-direction: column;
-        align-self: flex-start;
+        align-self: left;
+        width: 40%;
         border-radius: 10px;
+        background-color: rgb(165, 146, 111);
+        border-color: black;
+        border: 2px solid;
         background-color: rgb(165, 146, 111);
         padding: 20px;
         margin: 20px;
+    }
+    .box-one:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
     }
     .box-one h2{
         text-align: center;
     }
     .box-one ul li{
-        margin-bottom: 10px;
-        padding: 0% 10%;
+        list-style: none;
+        font-size: 20px;
     }
+    
     .box-two{
         display:flex;
         flex-direction: column;
-        align-self: flex-end;
+        align-self: right;
+        width: 40%;
         border-radius: 10px;
         background-color: rgb(165, 146, 111);
         padding: 20px;
-        margin: ;
+        margin: 20px;
+        border-color: black;
+        border: 2px solid;
     }
+    .box-two:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+    .box-two h3{
+        text-align: center;
+    }
+    .box-two ul li{
+        list-style: none;
+        font-size: 20px;
+    }
+    
     </style>
 </head>
 <body>
@@ -73,6 +100,7 @@
         <a href="action.html">Action</a>
         <a href="contact.html">Contact</a>
     </div>
+
     <h1>About Us</h1>
     <img src="seeetz-aWzrhwV4s38-unsplash.jpg" alt="">
     <div class="page">
