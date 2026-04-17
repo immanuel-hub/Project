@@ -26,6 +26,64 @@
         background-color: rgba(99, 99, 118, 0.329);
         border-radius: 5px;
     }
+    body{
+        background-color: #F5E9DA;
+    }
+    h1{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        color: #D9A441;
+    }
+    p{
+        text-align: center;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    ul{
+        list-style: none;
+        text-align: center;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    ul li{
+        margin-bottom: 10px;
+    }
+    .contactform{
+        width:50%;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #1F3A5F;
+        color: #F5E9DA; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .contactform label{
+        display:block;
+        margin-bottom: 5px;
+    }
+     .contactform input, .contactform textarea{
+        width:100%;
+        padding:5px;
+        margin-bottom:10px;
+        border-radius:5px;
+        border:1px solid #ccc;
+     }
+     .contactform input[type="submit"]{
+        background-color: #D9A441;
+        color: #1F3A5F;
+        border:none;
+        cursor: pointer;
+        font-weight: bold;
+        
+     }
+     .contactform input[type = "submit"]:hover{
+        background-color: #F5E9DA;
+        color: #1F3A5F;
+        border:1px solid #ccc;
+     }
+
+    
+
     
     </style>
 </head>
@@ -44,8 +102,8 @@
     <li><a href="Email:immanuelokoth7@gmail.com">immanuelokoth7@gmail.com</a></li>
     <li><a href="phone:0758549847">0758549847</a></li>
     <li>Nairobi, Kilimani</li>
-
 </ul>
+
 <div class="contactform">
 <form action="submit_form.php" method="post"></form>
       <label for="name":>Name</label>
