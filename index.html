@@ -9,9 +9,10 @@
      .nav{
         display:flex;
         flex-wrap: wrap;
-        justify-content: flex-end;
-        background-color: #1F3A5F;
-        padding:3%;
+        justify-content: center;
+        background-color:rgba(31, 58, 95, 0.95);
+        padding:20px;
+        gap: 20px;
     
     }
     .nav a{
@@ -21,15 +22,18 @@
         font-size: 20px;
         font-weight: bold;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
+        transition: 0.3s ease;
     }
     .nav a:hover{
         color: rgb(255, 255, 255);
-        background-color: rgba(99, 99, 118, 0.329);
+        background-color: rgba(255, 255, 255, 0.15);
         border-radius: 5px;
+        padding: 5px 10px;
     }
     .page{
-        width: 50%;
-        margin: 0 auto;
+        width: 90%;
+        max-width: 900px;
+        margin: 40px auto;
         padding: 20px;
         border-radius: 10px;
         flex-direction: column;
@@ -38,62 +42,118 @@
     }
     .box1{
         background-color:#1F3A5F;
-        padding: 20px;
-        border-radius: 10px;
-        margin-bottom: 20px;
+        padding: 25px;
+        border-radius: 12px;
+        margin-bottom: 25px;
+        width: 100%;
+        box-shadow:0 8px 20px rgba(0, 0, 0, 0.25);
+    }
+    .box1:hover{
+        transform: scale(1.05);
+        transition: 0.3s ease;
     }
     .box1 ul li{
-        margin-bottom: 10px;
-        padding: 0% 10%;
+        margin-bottom: 12px;
+        padding: 0 5%;
         color: #F5E9DA;
-
+        line-height:1.6;
     }
     .box2{
-        background-color: #1F3A5F;
-        padding: 20px;
-        border-radius: 10px;
-        margin-bottom: 50%;
+        background-color:#1F3A5F;
+        padding: 25px;
+        border-radius: 12px;
+        margin-bottom: 25px;
+        width: 100%;
+        box-shadow:0 8px 20px rgba(0, 0, 0, 0.25);
     }
+    .box2:hover{
+        transform: scale(1.05);
+        transition: 0.3s ease;
+        }
     .box2 ul li{
-        margin-bottom: 10px;
-        padding: 0% 10%;
+        margin-bottom: 12px;
+        padding: 0 5%;
         color: #F5E9DA;
+        line-height:1.6;
     }
 
     body{
         background-image: url("seeetz-aWzrhwV4s38-unsplash.jpg");
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
         font-family: Arial, sans-serif;
+        min-height: 100vh;
     }
    h1{
     text-align: center;
     color: #D9A441;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-size: 350%;
+    font-size: 3rem;
     font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
    }
    h2, h3{
     color: #D9A441;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     text-align: center;
-    font-size: 200%;
+    font-size: 2rem;
     font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
    }
    .start{
-    background-color: #1F3A5F;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    background-color:#1F3A5F;
+        padding: 25px;
+        border-radius: 12px;
+        margin-bottom: 25px;
+        width: 100%;
+        box-shadow:0 8px 20px rgba(0, 0, 0, 0.25);
+   }
+   .start:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
    }
    .start p{
     color: #F5E9DA;
-    padding: 0% 10%;
+    padding: 0 5%;
+    text-align: center;
+    line-height: 1.7;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
    }
    .start h1{
-    font-size: 300%;
+    font-size: 2.5rem;
     font-family: 'Times New Roman', Times, serif;
    }
+   @media(max-width: 768px){
+    .nav{
+        flex-direction:column; 
+        align-items:center;
+    }
+    .nav a{
+        font-size:2.5rem;
+    }
+    h1{
+        font-size:2.2rem;
+    }
+    h2,h3{
+        font-size: 1.6rem;
+    }
+    .start h1{
+    font-size: 2rem;
+        }
+
+    .start p,
+    .box1 ul li,
+    .box2 ul li{
+     font-size: 16px;
+    }
+
+    .page{
+        width: 95%;
+        padding: 10px;
+    }}
+
    
 </style>
 <body>
