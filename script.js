@@ -1,8 +1,12 @@
-const { createElement } = require("react");
 
-let container = document.getElementById("items-container");
-fetch ("https://dummyjson.com/products")
-.then(response => response.json())
-.then(data => {
-    displayItems(data.products);
-});
+const container = document.getElementById("items-container");
+
+function loadItems(){
+    fetch("https://dummyjson.com/products")
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(data) {
+        displayItems(data.products);
+    });
+}
