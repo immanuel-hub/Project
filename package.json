@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "project",
+  "description": "",
+  "version": "1.0.0",
+  "main": "script.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/immanuel-hub/Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/immanuel-hub/Project/issues"
+  },
+  "homepage": "https://github.com/immanuel-hub/Project#readme"
+}

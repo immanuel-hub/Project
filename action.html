@@ -32,7 +32,7 @@
     }
   
     </style>
-    <script src="script.js"></script>
+    
 <body>
     <div class="nav">
     
@@ -60,8 +60,8 @@
      
     <br><br>
 
-    <label>Category</label>
-    <select id="Category">
+    <label>category</label>
+    <select id="category">
         <option>All</option>
         <option>Furniture</option>
         <option>Electronics</option>
@@ -78,16 +78,16 @@
 
     <form action="#" method="post">
         <label>Item Name:</label><br>
-        <input type="text"><br><br>
+        <input type="text" id="itemName"><br><br>
         <label>Category:</label><br>
-        <input type="text"><br><br>
+        <input type="text" id="itemcategory"><br><br>
         <label>Price:</label><br>
-        <input type="number"><br><br>
-        <label>Exchange Option</label><br>
-        <input type="text" placeholder="what would you accept in exchange?"><br><br>
+        <input type="number" id="itemPrice"><br><br>
+ b      <label>Exchange Option</label><br>
+        <input type="text"  id="itemExchange" placeholder="what would you accept in exchange?"><br><br>
         <label>Description:</label><br>
-        <textarea></textarea><br><br>
-
+        <textarea id="itemDescription"></textarea><br><br>
+ 
         <button type="submit">Save Item</button>
     </form>
 
@@ -95,15 +95,16 @@
 
     <h2>Booking</h2>
 
-    <form action="#" method="post">
-        <label>Full Name:</label>
-        <input type="text"><br><br>
-        <label>Phone Number:</label><br>
-        <input type="text"><br><br>
-        <label>Quantity</label><br>
-        <input type="number" value="1"><br><br>
-
-        <button type="submit">Confirm</button>
-    </form>
+    <form id="bookingForm">
+    <label>Full Name:</label>
+    <input type="text" id="fullName"><br><br>
+    <label>Phone Number:</label>
+    <input type="text" id="phone"><br><br>
+    <label>Quantity:</label>
+    <input type="number" id="quantity" value="1"><br><br>
+    <button type="submit">Confirm</button>
+</form>
+<div id="formMessage" style="text-align:center; margin-bottom:15px;"></div>
+    <script src="script.js"></script>
 </body>
 </html>
