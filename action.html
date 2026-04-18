@@ -30,12 +30,85 @@
         border-radius: 5px;
         padding: 5px 10px;
     }
+    body{
+        background-color:  #F5E9DA;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .page{
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.section{
+    background-color:#1F3A5F;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow:0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: 0.3s ease;
+}
+
+.section:hover{
+    transform: scale(1.03);
+}
+
+.section h2, .section h3{
+    color:#D9A441;
+    text-align:center;
+    font-family:'Times New Roman', Times, serif;
+    margin-bottom:15px;
+}
+
+.section p, .section li, .section label{
+    color:#F5E9DA;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height:1.6;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    margin-bottom:12px;
+    font-size:16px;
+}
+
+button{
+    background-color:#D9A441;
+    color:#1F3A5F;
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+button:hover{
+    background-color:#F5E9DA;
+}
+
+#items-container div{
+    background-color:#F5E9DA;
+    color:#1F3A5F;
+    border-radius:10px;
+    padding:15px;
+    margin-top:10px;
+}
+
+#items-container h3{
+    color:#1F3A5F;
+}
   
     </style>
     
 <body>
     <div class="nav">
-        
+
         <a href="index.html">Home</a>
         <a href="About Us.html">About Us</a>
         <a href="action.html">Action</a>
