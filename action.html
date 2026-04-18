@@ -35,12 +35,14 @@
     
 <body>
     <div class="nav">
-    
+        
         <a href="index.html">Home</a>
         <a href="About Us.html">About Us</a>
         <a href="action.html">Action</a>
         <a href="contact.html">Contact</a>
     </div> 
+    <div class="page">
+        <div class="section">
      <h2>Payments and bookings</h2>
     <p>Choose an item, book it, pay via M-Pesa</p>
     
@@ -52,9 +54,10 @@
         <li>Click Book</li>
         <li>Pay via M-Pesa</li>
     </ol>
-
+    </div>
     <hr>
 
+    <div class="section">
     <h3>Search For An Item</h3>
     <input type="text" id="search" placeholder="Search item">
      
@@ -66,14 +69,18 @@
         <option>Furniture</option>
         <option>Electronics</option>
     </select>
+    </div>
 
     <hr>
 
+    <div class="section">
     <h2>Available Items</h2>
     <div id="items-container"></div>
+    </div>
         
     <hr>
-
+   
+    <div class="section">
     <h2>Add Item</h2>
 
     <form action="#" method="post">
@@ -90,9 +97,12 @@
  
         <button type="submit">Save Item</button>
     </form>
+    </div>
+
 
     <hr>
 
+    <div class="section">
     <h2>Booking</h2>
 
     <form id="bookingForm">
@@ -104,6 +114,7 @@
     <input type="number" id="quantity" value="1"><br><br>
     <button type="submit">Confirm</button>
 </form>
+</div>
 <div id="formMessage" style="text-align:center; margin-bottom:15px;"></div>
     <script src="script.js"></script>
 </body>
